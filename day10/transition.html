@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{
+            display: inline-block;
+            position: relative;
+            top: 5px;
+            height: 100px;
+            width: 100px;
+            padding: 50px;
+            margin: 40px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 50px  violet inset;
+            transition-property: all;
+            transition-duration: 3s;
+        }
+        #box1:hover{
+            transform:translate(-20px);
+            background-color: brown;
+            
+            
+        
+        }
+        #box2{
+            display: inline-block;
+            position: relative;
+            top: 5px;
+            height: 100px;
+            width: 100px;
+            padding: 50px;
+            margin: 40px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 50px  violet inset;
+            transition-property: all;
+            transition-duration: 3s;
+        }
+        #box2:hover{
+            transform:translate(20px);
+            background-color: aqua;
+            
+        }
+        #box3{
+            display: inline-block;
+            position: relative;
+            top: 5px;
+            height: 100px;
+            width: 100px;
+            padding: 50px;
+            margin: 40px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 50px  violet inset;
+            transition-property: all;
+            transition-duration: 3s;
+        }
+        #box3:hover{
+            transform:translatey(-20px);
+            background-color: grey;
+        }
+        #box4{
+            display: inline-block;
+            position: relative; 
+            top: 5px;
+            height: 100px;
+            width: 100px;
+            padding: 50px;
+            margin: 40px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 50px  violet inset;
+            transition-property: all;
+            transition-duration: 3s;
+        }
+        #box4:hover{
+            transform:translatey(20px);
+            background-color: green;
+        }
+        #scale1{
+            display: inline-block;
+            height: 130px;
+            width:130px ;
+            padding: 40px;
+            margin: 40px;
+            border-radius:10px ;
+            box-shadow: 2px 2px 50px rgb(0, 130, 124) inset;
+            transition-property: all;
+            transition-duration: 3s;
+        }
+        #scale1:hover{
+            transform:scaleX(3) ;
+            background-color: yellowgreen;
+        }
+        #scale2{
+            display: inline-block;
+            height: 130px;
+            width:130px ;
+            padding: 40px;
+            margin: 40px;
+            border-radius:10px ;
+            box-shadow: 2px 2px 50px rgb(0, 130, 124) inset;
+            transition-property: all;
+            transition-duration: 3s;
+        }
+        #scale2:hover{
+            transform:scaley(3) ;
+            background-color: chocolate;
+        }
+        #scale3{
+            display: inline-block;
+            height: 130px;
+            width:130px ;
+            padding: 40px;
+            margin: 40px;
+            border-radius:10px ;
+            box-shadow: 2px 2px 50px rgb(0, 130, 124) inset;
+            transition-property: all;
+            transition-duration: 3s;
+        }
+        #scale3:hover{
+            transform:scale(3,3) ;
+            background-color: darkmagenta;
+        }
+        #rotate1{
+            display: inline-block;
+            height: 130px;
+            width:130px ;
+            padding: 40px;
+            margin: 40px;
+            border-radius:10px ;
+            box-shadow: 2px 2px 50px red inset;
+            transition-property: all;
+            transition-duration: 3s;
+        }
+        #rotate1:hover{
+            transform:rotate(90deg) ;
+            background-color: hotpink;
+        }
+        #rotate2{
+            display: inline-block;
+            height: 130px;
+            width:130px ;
+            padding: 40px;
+            margin: 30px;
+            border-radius:10px ;
+            box-shadow: 2px 2px 50px red inset;
+            transition-property: all;
+            transition-duration: 3s;
+        }
+        #rotate2:hover{
+            transform:rotate(-90deg) ;
+            background-color: indigo;
+        }
+        #rotate3{
+            display: inline-block;
+            height: 130px;
+            width:130px ;
+            padding: 40px;
+            margin: 30px;
+            border-radius:10px ;
+            box-shadow: 2px 2px 50px red inset;
+            transition-property: all;
+            transition-duration: 3s;
+
+        }
+        #rotate3:hover{
+            transform:rotateY(40deg) ;
+            background-color: navy;
+        }
+        #rotate4{
+            display: inline-block;
+            height: 130px;
+            width:130px ;
+            padding: 40px;
+            margin: 30px;
+            border-radius:10px ;
+            box-shadow: 2px 2px 50px red inset;
+            transition-property: all;
+            transition-duration: 3s;
+        }
+        #rotate4:hover{
+            transform:rotatex(40deg) ;
+            background-color:darkorange;
+        }
+        #skew1{
+            display: inline-block;
+            height: 130px;
+            width:130px ;
+            padding: 40px;
+            margin: 40px;
+            border-radius:10px ;
+            box-shadow: 2px 2px 50px green inset;
+            transition-property: all;
+            transition-duration: 3s;
+        }
+        #skew1:hover{
+            transform:skew(40deg) ;
+            background-color: antiquewhite;
+        }
+        #skew2{
+            display: inline-block;
+            height: 130px;
+            width:130px ;
+            padding: 40px;
+            margin: 40px;
+            border-radius:10px ;
+            box-shadow: 2px 2px 50px green inset;
+            transition-property: all;
+            transition-duration: 3s;
+
+        }
+        #skew2:hover{
+            transform:skewx(-30deg) ;
+            background-color: aliceblue;
+        }
+        #skew3{
+            display: inline-block;
+            height: 130px;
+            width:130px ;
+            padding: 40px;
+            margin: 40px;
+            border-radius:10px ;
+            box-shadow: 2px 2px 50px green inset;
+            transition-property: all;
+            transition-duration: 3s;
+        }
+        #skew3:hover{
+            transform:skew(30deg,30deg) ;
+            background-color:burlywood;
+        }
+         </style>
+</head>
+<body>
+    <fieldset>
+        
+        <div id="box1">
+            Transform y-axis
+            leftside
+        </div>
+        <div id="box2">
+            Transform X-axis
+            Rightside
+        </div>
+        <div id="box3">
+            Transform-top
+            
+        </div>
+        <div id="box4">
+            Transformbottom
+        </div>
+        <fieldset>
+            <legend>scale</legend>
+            <div id="scale1">
+                scale x-axis <br>
+                vertical side
+            </div>
+            <div id="scale2">
+                scale y-axis
+                horizontal
+            </div>
+            <div id="scale3">
+                scale x&y horiz <br>
+                and verti
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>rotate</legend>
+            <div id="rotate1">
+                rotate x-axis <br>
+                clock-wise
+            </div>
+            <div id="rotate2">
+                rotate-anti-clock
+            </div>
+            <div id="rotate3">
+                rotate x-axis
+            </div>
+            <div id="rotate4">
+                rotate y-axis
+            </div>
+        </fieldset>
+        <fieldset>
+            <div id="skew1">
+                skew
+                x-axis
+            </div>
+            <div id="skew2">skew
+                y-axis
+    
+            </div>
+            <div id="skew3">
+                skew
+                x-y-axis
+            </div>
+        </fieldset>
+    </body>
+    </html>
